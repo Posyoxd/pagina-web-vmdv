@@ -359,9 +359,8 @@ nav > a{
 .cont-extra{
     font-size: 15px;
     }
-.contenedor-ftexto p{ 
-    font-size: 15px;
+.contenedor-ftexto p{  
+    font-size: 10px;
     text-align: center;
     }
-    
 }    
