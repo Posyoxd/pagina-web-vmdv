@@ -350,3 +350,10 @@ footer{
         width: 90%;
     }
 }
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+        font-size: 15px;
+    }
+}
