@@ -356,4 +356,9 @@ nav > a{
     margin-left: 5px;
     font-size:15px;
 }
+    
+   .contenedor-ftexto p{ 
+    font-size: 15px;
+    text-align: center;
+}
 }    
