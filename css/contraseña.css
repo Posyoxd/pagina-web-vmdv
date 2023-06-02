@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven pro';
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /*código que saque de una página para el efecto "degradado"*/
+        background: linear-gradient(to right, hsla(283, 26%, 77%, 0.801), hsla(284, 100%, 9%, 0.801)), url(../img/ALEX\ KROKUS.gif);   
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, hsla(283, 26%, 77%, 0.801), hsla(284, 100%, 9%, 0.801)), url(../img/ALEX\ KROKUS.gif);  
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover; /*comando para centrar imagen de fondo*/
+}
+
+.formulario {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    background: #00000098;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario .texto{
+    width: 300px;
+    color: #fff;
+    font-size: 1em;
+    display: flex;
+    text-align: center;
+    top: -10px;
+}
+
+.formulario h2 {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contra ion-icon{
+    color: #fff;
+    font-size: 3em;
+    position: relative;
+    left: 45%;
+    top: -10px;
+}
+
+
+.boxvalores{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 1px solid #fff;
+}
+
+.boxvalores label{
+    position: absolute;
+    top: -40%;
+    left: 5px;
+    transform: translateY(-20%);
+    font-size: 1.2em;
+    pointer-events: none;
+    transition: .5s;
+    color: #fff;
+}
+
+.boxvalores input{
+    width: 100%;
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 0 0 5px;
+    color: #fff;
+}
+
+.boxvalores ion-icon{
+    position: absolute;
+    right: 8px;
+    top: -0px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+button{
+    width: 100%;
+    height: 35px;
+    border-radius: 40px;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    background: hsla(0, 0%, 100%, 0.664);
+}
+
+.opcion p{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.opcion a{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+.opcion a:hover{
+    text-decoration: underline;
+}
+
+.fin a{
+    color: #fff;
+}
+
+.fin a:hover{
+    text-decoration: underline;
+}

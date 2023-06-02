@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Maven pro';
+    font-size: 20px;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 700px;
+    background: #20002c;
+    transition: all .1 ease-in-out;
+    background: linear-gradient(to right, hsla(283, 26%, 77%, 0.801), hsla(284, 100%, 9%, 0.801)), url(../img/ALEX\ KROKUS.gif); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    animation: header 6s infinite;
+}
+
+@keyframes header{
+    0%{
+        background: linear-gradient(to right, hsla(283, 26%, 77%, 0.801), hsla(284, 100%, 9%, 0.801)), url(../img/ciudad\ \(2\).gif);
+        background-size: cover;
+    }
+    50%{
+        background: linear-gradient(to right, hsla(283, 26%, 77%, 0.801), hsla(284, 100%, 9%, 0.801)), url(../img/ciudad\ \(2\).gif);
+        background-size: cover;
+    }
+    51%{
+        background: linear-gradient(to right, hsla(283, 26%, 77%, 0.801), hsla(284, 100%, 9%, 0.801)), url(../img/ALEX\ KROKUS.gif);
+        background-size: cover;
+    }
+    100%{
+        background: linear-gradient(to right, hsla(283, 26%, 77%, 0.801), hsla(284, 100%, 9%, 0.801)), url(../img/ALEX\ KROKUS.gif);
+        background-size: cover;
+    }
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-sobre-proyecto{
+    width: 35%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    padding: 4px;
+    margin-right: 6px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.mundos{
+    background: #f2f2f2;
+}
+
+.galeria-mundos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-mundos{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-mundos > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.icono-mundos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%,0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icono-mundos img{
+    width: 50px;
+}
+
+.icono-mundos p{
+    color: #fff;
+}
+
+.imagen-mundos:hover .icono-mundos{
+    transform: scale(1);
+}
+
+.cards .card{
+    background: hsla(273, 91%, 27%, 0.801);
+    display: flex;
+    width: 40%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-juego{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-juego p{
+    font-weight:  300;
+    padding-top: 5px;
+}
+
+.info-extra{
+    background: #fff;
+    padding-bottom:  30px;
+}
+
+.cont-extra{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ind-extra{
+width: 28%;
+text-align: center;
+}
+
+.ind-extra img{
+    width: 90%;
+}
+
+.ind-extra h3{
+    margin: 10px 0;
+}
+
+.ind-extra p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+footer{
+    background: darkslateblue;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid darkslateblue;
+}
+
+.contenedor-ftexto{
+    text-align: center;
+}
+
+.contenedor-ftexto h4{
+    color: #ccc;
+    border-bottom:  3px solid #9658c9;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+.contenedor-ftexto p{
+    color: #ccc;   
+    font-size: medium;
+    text-align: center;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 0 0 0;
+    color: #fff;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-sobre-proyecto{
+        width: 90%;
+    }
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicios-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicios-ind:nth-child(1), .servicios-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicios-ind img{
+        width: 90%;
+    }
+}
